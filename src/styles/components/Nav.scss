@@ -1,0 +1,19 @@
+.nav {
+  background-color: aqua;
+  width: 100%;
+  position: fixed;
+  
+  &-mobile-closed {
+    @include center-row;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+  }
+
+  &-mobile-open {
+    display: none;
+  }
+
+  &-desktop {
+    display: none;
+  }
+}

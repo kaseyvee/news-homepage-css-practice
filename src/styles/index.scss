@@ -4,5 +4,10 @@
 @import "components";
 
 :root {
+  @include inter;
   font-size: 15px;
+  
+  body {
+    margin: 0;
+  }
 }
