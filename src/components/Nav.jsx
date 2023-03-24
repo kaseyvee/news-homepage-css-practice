@@ -8,14 +8,21 @@ function Nav(props) {
       </div>
 
       <div className="nav-mobile-open">
-        <img src="/assets/icon-menu-close.svg" alt="close menu icon"/>
-        <ul>
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
-        </ul>
+        <div className="nav-mobile-open-overlay"></div>
+        <div className="nav-mobile-open-main">
+          <img
+            src="/assets/icon-menu-close.svg"
+            alt="close menu icon"
+            className="close-menu-icon"
+          />
+          <div className="nav-items">
+            <div>Home</div>
+            <div>New</div>
+            <div>Popular</div>
+            <div>Trending</div>
+            <div>Categories</div>
+          </div>
+        </div>
       </div>
 
       <div className="nav-desktop">

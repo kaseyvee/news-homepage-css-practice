@@ -1,5 +1,5 @@
 .nav {
-  background-color: aqua;
+  // background: aqua;
   width: 100%;
   position: fixed;
   
@@ -10,7 +10,46 @@
   }
 
   &-mobile-open {
-    display: none;
+    // background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+
+    &-overlay {
+      background: $transparentDarkBlue;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    &-main {
+      z-index: 2;
+      position: absolute;
+      right: 0;
+      width: 70%;
+      height: 100vh;
+      background: $white;
+      display: flex;
+      flex-direction: column;
+      
+      .close-menu-icon {
+        align-self: flex-end;
+        margin: 2.5rem 2rem;
+      }
+
+      .nav-items {
+        @include inter(400);
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 2rem;
+        font-size: 1.5rem;
+      }
+    }
   }
 
   &-desktop {
