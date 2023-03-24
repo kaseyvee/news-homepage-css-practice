@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+@mixin inter($font-weight: 400) {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: $font-weight !important;
+}
+
+.inter_regular {
+  @include inter(400);
+}
+
+.inter_bold {
+  @include inter(700);
+}
+
+.inter_extraBold {
+  @include inter(800);
+}
