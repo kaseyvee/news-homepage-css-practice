@@ -4,7 +4,7 @@ function Featured(props) {
   return (
     <div className='featured'>
       <div className='featured_image-container'>
-        <img src='/assets/image-web-3-desktop.jpg' />
+        <img src='/assets/image-web-3-mobile.jpg' />
       </div>
 
       <h1 className='featured_title'>

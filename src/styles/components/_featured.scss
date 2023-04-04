@@ -1,3 +1,39 @@
 .featured {
-  
+  display: grid;
+  gap: 2rem;
+
+  &_image-container {
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &_title {
+    @include inter(800);
+    color: $darkBlue;
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  &_article-preview {
+    display: grid;
+    gap: 2rem;
+
+    &_content {
+      line-height: 2;
+    }
+
+    &_button {
+      @include inter(700);
+      background-color: $red;
+      color: $white;
+      border: none;
+      padding: 1rem 2rem;
+      letter-spacing: 0.25rem;
+    }
+  }
+
 }
