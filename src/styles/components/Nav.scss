@@ -1,16 +1,26 @@
 .nav {
-  // background: aqua;
+  background: $white;
   width: 100%;
   position: fixed;
+  top: 0;
   
-  &-mobile-closed {
+  &-main {
     @include center-row;
     justify-content: space-between;
     padding: 2rem 1rem;
+
+    .menu-icon {
+      cursor: pointer;
+    }
+
+    .nav-items {
+      display: none;
+    }
   }
 
   &-mobile-open {
     // background: red;
+    color: $darkBlue;
     position: absolute;
     top: 0;
     left: 0;
@@ -39,6 +49,7 @@
       .close-menu-icon {
         align-self: flex-end;
         margin: 2.5rem 2rem;
+        cursor: pointer;
       }
 
       .nav-items {
@@ -52,7 +63,35 @@
     }
   }
 
-  &-desktop {
-    display: none;
+  .nav-item {
+    cursor: pointer;
+    width: fit-content;
+
+    &:hover {
+      color: $orange;
+    }
+    &:active {
+      color: $darkBlue;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .nav {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 0 0 0;
+
+    &-main {
+      .menu-icon {
+        display: none;
+      }
+
+      .nav-items {
+        @include center-row;
+        gap: 2rem;
+      }
+    }
   }
 }

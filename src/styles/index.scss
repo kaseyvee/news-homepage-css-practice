@@ -6,9 +6,13 @@
 :root {
   @include inter;
   font-size: 15px;
-  color: $darkBlue;
+  color: $darkGreyishBlue;
   
   body {
     margin: 0;
+
+    .main-container {
+      margin-top: 7rem;
+    }
   }
 }
