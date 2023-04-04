@@ -4,8 +4,10 @@ function New(props) {
   const newArticles = props.new;
 
   const newArticlesList = newArticles.map((newArticle) => {
+    const index = newArticles.indexOf(newArticle);
+
     return (
-      <div className='new_article-container_item'>
+      <div className='new_article-container_item' key={index}>
         <h2 className='new_article-container_item_header'>
           {newArticle.header}
         </h2>

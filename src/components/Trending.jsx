@@ -4,25 +4,28 @@ function Trending(props) {
   const trendingArticles = props.trending;
 
   const trendingArticlesList = trendingArticles.map((trendingArticle) => {
-    const rank = trendingArticles.indexOf(trendingArticle) + 1;
+    const index = trendingArticles.indexOf(trendingArticle);
+    const rank = index + 1;
 
     return (
-      <div className='trending_item'>
+      <div className='trending_item' key={index}>
         <div className='trending_item_image-container'>
           <img src={trendingArticle.image} alt="retro pc" />
         </div>
 
-        <h1 className='trending_item_rank'>
-          0{rank}
-        </h1>
+        <div className='trending_item_main'>
+          <h1 className='trending_item_main_rank'>
+            0{rank}
+          </h1>
 
-        <h2 className='trending_item_header'>
-          {trendingArticle.header}
-        </h2>
+          <h2 className='trending_item_main_header'>
+            {trendingArticle.header}
+          </h2>
 
-        <p className='trending_item_preview'>
-          {trendingArticle.preview}
-        </p>
+          <p className='trending_item_main_preview'>
+            {trendingArticle.preview}
+          </p>
+        </div>
       </div>
     )
   })
