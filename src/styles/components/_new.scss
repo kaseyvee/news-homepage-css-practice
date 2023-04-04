@@ -18,6 +18,15 @@
         @include inter(700);
         color: $white;
         font-size: 1.35rem;
+        cursor: pointer;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+
+      &_preview {
+        color: $greyishBlue;
       }
     }
 

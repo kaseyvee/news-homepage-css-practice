@@ -26,6 +26,11 @@
         @include inter(800);
         color: $darkBlue;
         font-size: 1.2rem;
+        cursor: pointer;
+
+        &:hover {
+          color: $orange;
+        }
       }
     }
   }
