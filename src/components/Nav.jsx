@@ -20,9 +20,9 @@ function Nav() {
     <div className="nav">
 
       <div className="nav-main">
-        <img src="/assets/logo.svg" alt="logo"/>
+        <img src="logo.svg" alt="logo"/>
         <img
-          src="/assets/icon-menu.svg"
+          src="icon-menu.svg"
           alt="menu icon"
           className="menu-icon"
           onClick={handleToggleNav}
@@ -40,7 +40,7 @@ function Nav() {
         <div className="nav-mobile-open-overlay"></div>
         <div className="nav-mobile-open-main">
           <img
-            src="/assets/icon-menu-close.svg"
+            src="icon-menu-close.svg"
             alt="close menu icon"
             className="close-menu-icon"
             onClick={handleToggleNav}

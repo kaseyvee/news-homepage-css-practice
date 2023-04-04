@@ -28,3 +28,7 @@ Users should be able to:
 - Sass
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+
+### Continued development
+
+In the future I'd like to add a smoother transition when opening the nav menu on mobile.

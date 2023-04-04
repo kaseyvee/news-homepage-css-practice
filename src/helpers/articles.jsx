@@ -3,8 +3,8 @@ const articles = {
     {
       header: "The Bright Future of Web 3.0?",
       preview: "We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?",
-      imageMobile: "/assets/image-web-3-mobile.jpg",
-      imageDesktop: "/assets/image-web-3-desktop.jpg"
+      imageMobile: "image-web-3-mobile.jpg",
+      imageDesktop: "image-web-3-desktop.jpg"
     }
   ],
   new: [
@@ -28,17 +28,17 @@ const articles = {
     {
       header: "Reviving Retro PCs",
       preview: "What happens when old PCs are given modern upgrades?",
-      image: "/assets/image-retro-pcs.jpg"
+      image: "image-retro-pcs.jpg"
     },
     {
       header: "Top 10 Laptops of 2022",
       preview: "Our best picks for various needs and budgets.",
-      image: "/assets/image-top-laptops.jpg"
+      image: "image-top-laptops.jpg"
     },
     {
       header: "The Growth of Gaming",
       preview: "How the pandemic has sparked fresh opportunities.",
-      image: "/assets/image-gaming-growth.jpg"
+      image: "image-gaming-growth.jpg"
     },
   ]
 }
