@@ -1,0 +1,28 @@
+.new {
+  background-color: $darkBlue;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+
+  &_header {
+    @include inter(700);
+    color: $orange;
+  }
+
+  &_article-container {
+
+    &_item {
+      display: grid;
+      gap: 1rem;
+      padding: 2rem 0;
+
+      &_header {
+        @include inter(700);
+        color: $white;
+        font-size: 1.3rem;
+      }
+    }
+
+    &_item:not(:last-child) {
+      border-bottom: 1px solid $darkGreyishBlue;
+    }
+  }
+}

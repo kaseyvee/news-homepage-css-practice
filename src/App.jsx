@@ -1,5 +1,6 @@
 import Featured from "./components/Featured"
 import Nav from "./components/Nav"
+import New from "./components/New"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
       <Nav />
       <div className="main-container">
         <Featured />
+        <New />
       </div>
     </div>
   )
