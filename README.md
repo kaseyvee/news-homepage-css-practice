@@ -14,15 +14,16 @@ Users should be able to:
 ### Screenshots
 
 #### Desktop View
-![Desktop View](https://i.imgur.com/iLSH2M3.png)
+![Desktop View](https://i.imgur.com/eLgLHgv.png)
 
 #### Mobile View
-![Mobile View](https://i.imgur.com/rJMf7aI.png)
+![Mobile View](https://i.imgur.com/kHWDQ97.png)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Grid
 - Flexbox
 - Sass
 - Mobile-first workflow
