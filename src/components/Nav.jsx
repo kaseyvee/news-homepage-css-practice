@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 
-function Nav(props) {
+function Nav() {
   const [openNav, setOpenNav] = useState(false);
 
   useEffect(() => {
