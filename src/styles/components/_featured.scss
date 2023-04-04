@@ -1,9 +1,8 @@
 .featured {
   display: grid;
-  gap: 2rem;
+  gap: 1.75rem;
 
   &_image-container {
-
     img {
       width: 100%;
       object-fit: cover;
@@ -22,10 +21,6 @@
     display: grid;
     gap: 2rem;
 
-    &_content {
-      line-height: 2;
-    }
-
     &_button {
       @include inter(700);
       background-color: $red;
@@ -34,7 +29,21 @@
       padding: 1rem 2.25rem;
       letter-spacing: 0.25rem;
       width: fit-content;
+      height: fit-content;
     }
   }
+}
 
+@media (min-width: 769px) {
+  .featured {
+    grid-template-columns: 1fr 1fr;
+
+    &_image-container {
+      grid-column: span 2;
+    }
+
+    &_header {
+      font-size: 4rem;
+    }
+  }
 }

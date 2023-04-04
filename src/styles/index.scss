@@ -12,7 +12,28 @@
     margin: 0;
 
     .main-container {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
       padding: 7rem 1rem;
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  body {
+    .App {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
+
+    .main-container {
+      max-width: 75rem;
+      padding: 9rem 1rem !important;
+      display: grid !important;
+      gap: 4rem 1.75rem !important;
+      grid-template-columns: 2fr 1fr;
     }
   }
 }

@@ -1,12 +1,38 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 function Featured(props) {
+  const [featuredImage, setFeaturedImage] = useState(null);
   const featuredArticle = props.featured[0];
+  const minWidth = 769;
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(`(min-width: ${minWidth}px)`);
+
+    if (mediaQuery.matches) {
+      return setFeaturedImage(featuredArticle.imageDesktop);
+    }
+
+    return setFeaturedImage(featuredArticle.imageMobile);;
+  }, [])
+
+  function handleFeaturedImageToggle() {
+    let windowWidth = window.innerWidth;
+
+    if (windowWidth < minWidth) {
+      return setFeaturedImage(featuredArticle.imageMobile);
+    }
+
+    return setFeaturedImage(featuredArticle.imageDesktop);
+  }
+
+  addEventListener("resize" , handleFeaturedImageToggle);
 
   return (
     <div className='featured'>
       <div className='featured_image-container'>
-        <img src={featuredArticle.imageMobile} />
+        <img src={featuredImage} />
       </div>
 
       <h1 className='featured_header'>
