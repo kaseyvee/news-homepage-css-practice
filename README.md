@@ -2,7 +2,7 @@
 
 This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl/hub). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-Check out my other solutions on Frontend Mentor at [@kaseyvee](https://www.frontendmentor.io/profile/kaseyvee).
+Check out my other solutions on Frontend Mentor at [@kaseyvee](https://www.frontendmentor.io/profile/kaseyvee) or [frontend-mentor-challenges](https://github.com/kaseyvee/frontend-mentor-challenges).
 
 ### The challenge
 
@@ -28,7 +28,3 @@ Users should be able to:
 - Sass
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-
-### Continued development
-
-In the future I'd like to add a smoother transition when opening the nav menu on mobile.
