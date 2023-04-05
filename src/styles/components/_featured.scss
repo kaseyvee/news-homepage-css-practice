@@ -1,6 +1,6 @@
 .featured {
   display: grid;
-  gap: 1.75rem;
+  gap: 1.75rem 2.25rem;
 
   &_image-container {
     img {
@@ -43,6 +43,7 @@
 @media (min-width: 769px) {
   .featured {
     grid-template-columns: 1fr 1fr;
+    grid-column: span 2;
 
     &_image-container {
       grid-column: span 2;

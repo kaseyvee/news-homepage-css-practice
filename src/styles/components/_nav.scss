@@ -93,8 +93,28 @@
 
       .nav-items {
         @include center-row;
-        gap: 2rem;
+        gap: 3rem;
       }
     }
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  
+  100% {
+    transform: translateX(100%);
   }
 }
